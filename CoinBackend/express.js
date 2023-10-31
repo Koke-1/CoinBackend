@@ -10,7 +10,7 @@ const server = http.createServer(app)
 app.use(cors())
 app.use(express.json())
 
-const db = mysql.createConnection({
+const db = mysql.createPool({
     host:"database-1.cfip7vy4eklc.us-east-2.rds.amazonaws.com",
     port:"3306",
     user:"admin",
