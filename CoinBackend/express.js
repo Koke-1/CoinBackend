@@ -70,6 +70,7 @@ app.put("/API",(req,res)=>{
 
 app.get("/",(req,res)=>{
     console.log("connected");
+    res.send("Working")
 })
 
 app.get(`/API`,(req,res)=>{
